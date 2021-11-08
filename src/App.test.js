@@ -7,7 +7,7 @@ test("renders without error", ()=> {
     render(<App/>);
 });
 
-test("renders all missions when button is clicked", ()=> {
+test("renders all missions when button is clicked", async ()=> {
     //Arrange: Renders App
     render(<App/>);
 
@@ -16,6 +16,6 @@ test("renders all missions when button is clicked", ()=> {
     userEvent.click(button);
 
     //Assert: Verify that mission items are on the screen
-    const missions = screen.queryAllByTestId('mission');
+    const missions = screen.findAllByTestId('mission');
     console.log(missions);
 });
