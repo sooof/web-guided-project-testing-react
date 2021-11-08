@@ -8,15 +8,15 @@ test("renders without errors", ()=> {
 
 const testMissions = [
     {
-        missions_id: 1,
+        mission_id: 1,
         mission_name: "Mission 1"
     },
     {
-        missions_id: 2,
+        mission_id: 2,
         mission_name: "Mission 3"
     },
     {
-        missions_id: 3,
+        mission_id: 3,
         mission_name: "Mission 3"
     }
 ]
@@ -35,5 +35,6 @@ test("renders 3 missions after rendering no missions", ()=> {
     rerender(<MissionsList missions={testMissions}/>);
 
     //Act 3: Find all missions
-    //Asset 3: Check that 3 missions have been rendered.
+    missions = screen.queryAllByTestId('mission');
+    )
 });
