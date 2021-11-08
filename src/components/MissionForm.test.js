@@ -35,6 +35,10 @@ test('renders button if isFetchingData is false', ()=> {
 })
 
 test('executes getData if button is clicked', ()=> {
-    
+    //Arrange: Render our component with isFetchingData === false
+    render(<MissionForm isFetchingData={false}/>);
+
+    //Act: Find our button. Press our button.
+    //Assert: See if a function gets called?
 
 });
