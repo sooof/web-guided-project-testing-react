@@ -16,5 +16,6 @@ test("renders all missions when button is clicked", ()=> {
     userEvent.click(button);
 
     //Assert: Verify that mission items are on the screen
-    
+    const missions = screen.queryAllByTestId('mission');
+    console.log(missions);
 });
