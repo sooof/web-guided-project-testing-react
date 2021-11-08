@@ -34,8 +34,9 @@ test("renders 3 missions after rendering no missions", ()=> {
     //Arrange 2: render component with 3 missions
     rerender(<MissionsList missions={testMissions}/>);
 
-    //Act 3: Find all missions
+    //Act 2: Find all missions
     missions = screen.queryAllByTestId('mission');
     
+    //Asset 2s: Check that no missions have been rendered.
     expect(missions).toHaveLength(3);
 });
