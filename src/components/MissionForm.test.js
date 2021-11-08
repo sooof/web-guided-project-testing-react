@@ -45,5 +45,5 @@ test('executes getData if button is clicked', ()=> {
     userEvent.click(button);
 
     //Assert: See if a function gets called?
-    console.log(fakeGetData);
+    console.log(fakeGetData.mock);
 });
