@@ -12,9 +12,13 @@ test("renders without error", ()=> {
 
 test("renders all missions when button is clicked", async ()=> {
     fetchMissions.mockResolvedValueOnce({
-        data: {
-            
-        }
+        data: [
+            {
+                twitter: "https://twitter.com/thaicomplc",
+                website: "http://www.thaicom.net/en/satellites/overview",
+                wikipedia: "https://en.wikipedia.org/wiki/Thaicom"
+            }
+        ]
     });
     
     //Arrange: Renders App
