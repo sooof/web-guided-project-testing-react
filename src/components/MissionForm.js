@@ -9,7 +9,9 @@ const MissionForm = props => {
   return (
     <>
       {props.isFetchingData ? (
-        <div>we are fetching data</div>
+        <div>
+          <div>we are fetching data</div>
+        </div>
       ) : (
         <button onClick={handleGetData}>Get Data</button>
       )}
