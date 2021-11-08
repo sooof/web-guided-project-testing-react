@@ -47,4 +47,7 @@ test('executes getData if button is clicked', ()=> {
     //Assert: See if a function gets called?
     expect(fakeGetData.mock.calls.length).toBe(1);
     expect(fakeGetData.mock.calls.length === 1).toBeTruthy();
+    expect(fakeGetData.mock.calls).toHaveLength(1);
+    expect(fakeGetData).toHaveBeenCalled();
+    expect(fakeGetData).toHaveBeenCalledTimes(1);
 });
