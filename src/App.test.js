@@ -3,6 +3,6 @@ import {screen, render, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from "./App";
 
-render("renders without error", ()=> {
+test("renders without error", ()=> {
     render(<App/>);
 });
