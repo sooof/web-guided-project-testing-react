@@ -36,5 +36,6 @@ test("renders 3 missions after rendering no missions", ()=> {
 
     //Act 3: Find all missions
     missions = screen.queryAllByTestId('mission');
-    )
+    
+    expect(missions).toHaveLength(3);
 });
