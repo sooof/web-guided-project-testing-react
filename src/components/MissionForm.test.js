@@ -35,11 +35,7 @@ test('renders button if isFetchingData is false', ()=> {
 })
 
 test('executes getData if button is clicked', ()=> {
-    const fakeGetData = ()=> {
-        console.log("Calling my fake function");
-        console.log("Calling my fake function");
-        console.log("Calling my fake function");
-    }
+    const fakeGetData = jest.fn();
 
     //Arrange: Render our component with isFetchingData === false
     render(<MissionForm isFetchingData={false} getData={fakeGetData}/>);
@@ -49,5 +45,5 @@ test('executes getData if button is clicked', ()=> {
     userEvent.click(button);
 
     //Assert: See if a function gets called?
-
+    console.log(fakeGetData);
 });
