@@ -6,6 +6,21 @@ test("renders without errors", ()=> {
     render(<MissionsList missions={[]}/>);
 });
 
+const testMissions = [
+    {
+        missions_id: 1,
+        mission_name: "Mission 1"
+    },
+    {
+        missions_id: 2,
+        mission_name: "Mission 3"
+    },
+    {
+        missions_id: 3,
+        mission_name: "Mission 3"
+    }
+]
+
 test("renders 3 missions after rendering no missions", ()=> {
     //Arrange 1: render component with no missions
     const { rerender } = render(<MissionsList missions={[]}/>);
@@ -17,6 +32,7 @@ test("renders 3 missions after rendering no missions", ()=> {
     expect(missions).toHaveLength(0);
 
     //Arrange 2: render component with 3 missions
+    rerender(<MissionsList missions={testMissions}/>);
 
     //Act 3: Find all missions
     //Asset 3: Check that 3 missions have been rendered.
