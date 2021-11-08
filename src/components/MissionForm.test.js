@@ -25,7 +25,7 @@ test('renders loading message if isFetchingData is true', ()=> {
 });
 
 test('renders button if isFetchingData is false', ()=> {
-    
+
 })
 
 test('executes getData if button is clicked', ()=> {
