@@ -36,7 +36,7 @@ test('renders button if isFetchingData is false', ()=> {
 
 test('executes getData if button is clicked', ()=> {
     const fakeGetData = jest.fn(()=> {
-        console.log("doing the fake function thing.");
+        return({status:"Complete"});
     });
 
     //Arrange: Render our component with isFetchingData === false
