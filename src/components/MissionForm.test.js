@@ -18,14 +18,14 @@ test('renders loading message if isFetchingData is true', ()=> {
     //Assert: Verify that loading message exists
     expect(loadingMessage).toBeInTheDocument();
     expect(button).not.toBeInTheDocument();
-    
+
     // expect(loadingMessage).toBeTruthy();
     // expect(loadingMessage).not.toBeNull();
     // expect(loadingMessage).toHaveTextContent('we are fetching data');
 });
 
 test('renders button if isFetchingData is false', ()=> {
-
+    
 })
 
 test('executes getData if button is clicked', ()=> {
