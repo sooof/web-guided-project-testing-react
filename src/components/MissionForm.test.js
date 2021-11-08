@@ -12,9 +12,10 @@ test('renders loading message if isFetchingData is true', ()=> {
     render(<MissionForm isFetchingData={true}/>);
 
     //Act: Find our loading message
-    const loadingMessage = screen.getByText(/we are fetching data/i);
-
+    const loadingMessage = screen.queryByText(/we are fetching data/i);
+    
     //Assert: Verify that loading message exists
+
 });
 
 test('renders button if isFetchingData is false', ()=> {
