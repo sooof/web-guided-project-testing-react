@@ -25,7 +25,8 @@ test('renders loading message if isFetchingData is true', ()=> {
 });
 
 test('renders button if isFetchingData is false', ()=> {
-
+    render(<MissionForm isFetchingData={false}/>);
+    
 })
 
 test('executes getData if button is clicked', ()=> {
