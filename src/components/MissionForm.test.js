@@ -39,6 +39,9 @@ test('executes getData if button is clicked', ()=> {
     render(<MissionForm isFetchingData={false}/>);
 
     //Act: Find our button. Press our button.
+    const button = screen.queryByRole("button");
+    userEvent.click(button);
+
     //Assert: See if a function gets called?
 
 });
