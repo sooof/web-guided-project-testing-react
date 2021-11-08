@@ -48,4 +48,5 @@ test('executes getData if button is clicked', ()=> {
 
     //Assert: See if a function gets called?
     console.log(fakeGetData.mock);
+    expect(fakeGetData.mock.calls.length).toBe(3);
 });
