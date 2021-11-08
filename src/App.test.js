@@ -14,9 +14,16 @@ test("renders all missions when button is clicked", async ()=> {
     fetchMissions.mockResolvedValueOnce({
         data: [
             {
-                twitter: "https://twitter.com/thaicomplc",
-                website: "http://www.thaicom.net/en/satellites/overview",
-                wikipedia: "https://en.wikipedia.org/wiki/Thaicom"
+                mission_id: 1,
+                mission_name: "mission 1"
+            },
+            {
+                mission_id: 2,
+                mission_name: "mission 2"
+            },
+            {
+                mission_id: 3,
+                mission_name: "mission 3"
             }
         ]
     });
