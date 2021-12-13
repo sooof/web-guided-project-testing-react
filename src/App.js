@@ -14,6 +14,7 @@ export default function App() {
     setIsFetchingData(true);
     fetchMissions()
       .then(res => {
+        console.log("App.js red = ",res)
         setIsFetchingData(false);
         setMissions(res.data);
       })

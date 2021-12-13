@@ -45,10 +45,21 @@ test('executes getData if button is clicked', ()=> {
     // const fakeGetData = () => {
     //     console.log("Calling my fake function")
     // }
-    const fakeGetData = jest.fn();
+
+//     const fakeGetData = jest.fn((a)=>{
+//         return ({status:"Complete"})
+//     });
+//    render(<MissionForm isFetchingData={false} getData={()=>{
+//        fakeGetData(Math.random)
+//    }}/>);
+//    const button = screen.queryByRole("button");
+//    userEvent.click(button)
+//    userEvent.click(button)
+//    userEvent.click(button)
+   const fakeGetData = jest.fn();
 
     //Arrange: Render our component with isFetchingData === false
-    render(<MissionForm isFetchingData={false} getData={fakeGetData}/>);
+   render(<MissionForm isFetchingData={false} getData={fakeGetData}/>);
 
     //Act: Find our button. Press our button.
     const button = screen.queryByRole("button");
