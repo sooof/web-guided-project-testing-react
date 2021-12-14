@@ -4,7 +4,7 @@ const MissionForm = props => {
   const handleGetData = e => {
     e.preventDefault();
     console.log(props)
-    props.getData();
+    console.log("returned:", props.getData());
   };
 
 
